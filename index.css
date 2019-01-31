@@ -6,8 +6,10 @@
     height: 100%;
 }
 .containerBox {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: flex;
+  margin: 0 0;
+
 }
 .text-box {
     position: absolute; 
@@ -43,7 +45,7 @@
     left: 50%; */
 
 }
-.card{
+.stuff{
  
     font-size: 1.4vw;
     font-weight: 400;
@@ -55,12 +57,17 @@
     display: inline-block;
     padding: 1.5vh 1.5vw;
 }
-.card:hover{
+.stuff:hover{
     background-color: white;
     opacity: 0.5;
     color: black;
     border-style: solid;
     border-color: black;
+}
+.bg {
+  background-color: #1b1b1b;
+  color: white;
+  padding: 2vh
 }
 
 
@@ -87,13 +94,17 @@
 .topnav {
     /* position: relative; */
     color: white;
-    background-color: black
+    background-color: black;
     /* display: inline-block; */
+  display: flex;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  height: 8vh;
 }
 @media screen and (max-width: 600px) {
     .topnav a:not(:checked) {display: none;}
     .topnav a.icon {
-      /* float: right; */
       position: absolute;
       top: 30%;
       right: 10%;

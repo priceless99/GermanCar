@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <title>Home</title>
+</head>
+
+<body style="background-color:black;" onload="firstrun()">
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <ul>
+                <li> <a href="#">Home</a></li>
+                <li> <a href="about.html">Mercedes</a> </li>
+                <li> <a href="random.html">BMW</a> </li>
+                <li> <a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class=" topnav w3-top w3-bar">
+
+        <img src="Mercedes-Benz-logo-2011-1920x1080.png" class="img-responsive" alt="">
+
+        <div class=" topnav-right">
+
+            <a href="index.html" class=" right w3-bar-item w3-button">Home</a>
+            <a href="about.html" class=" right w3-bar-item w3-button">Mercedes</a>
+            <a href="random.html" class=" right w3-bar-item w3-button">BMW</a>
+            <a href="contact.html" class=" right w3-bar-item w3-button">Contact Us</a>
+
+        </div>
+
+        <a href="javascript:void(0);" class="icon" onclick="openNav()">
+            <i class="fa fa-bars"></i></a>
+    </div>
+    <div>
+        <div class="banner">
+             
+        </div>
+        <div><h1  style="color:gray" class="text-center">Contact Us</h1></div>
+        <div>
+        <svg width="100%" height="1">
+                <rect width='100%' height="100" style="fill:rgb(255, 255, 255);stroke-width:3;stroke:rgb(255, 255, 255)" />
+            </svg>
+
+
+        <div class="row text-center">
+            <div class="col-sm-4">
+                <h1 style="color:gray">Where we are</h1>
+                <p>Gee Corps. LLC
+                    <br>
+                    555 N Speedy Lane
+                    <br>
+                    Milwaukee, WI 54545-5215
+                </p>
+                <p>414-555-5555</p>
+                <p>Hours of Operation</p>
+                <p>Saturday - Sunday: 8 a.m. - 6 p.m.</p>
+            </div>
+            <div class="col-sm-4">
+                <h1  style="color:gray">Hotline</h1>
+                <p>In case you 
+                    <br>
+                    need to contact us 
+                    <br>
+                    quickly or in emergency
+                </p>
+                <p>414-999-9999</p>
+                <p>Hours of Operation</p>
+                <p>Saturday - Sunday: 24/7</p>
+            </div>
+            <div class="col-sm-4">
+                <h1  style="color:gray">Social Media</h1>
+                <p>These are a few
+                    <br>
+                    ways that you can support 
+                    <br>
+                    our cause and site.
+                </p>
+                <p> <i class="fa fa-facebook-square"></i>. facebook name  </p>
+                <p> <i class="fa fa-twitter-square"></i>. @twitter</p>
+                <p>  <i class="fa fa-google-plus-square"></i>. xxxx@gmail.com</p>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div style="color: white" id="contact" class="container">
+        <h3  style="color:gray" class="text-center">Email Us</h3>
+        <p class="text-center"><em>Leave some feedback</em></p>
+
+        <div class="row">
+            <div class="col-md-4">
+                <p>Let us know what we can do</p>
+                <p><span class="glyphicon glyphicon-map-marker"></span>Milwaukee, US</p>
+                <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
+                <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    </div>
+                </div>
+                <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+                <br>
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        <button  class="btn pull-right" type="submit">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+
+
+    </div>
+    <footer class="container-fluid text-center bg ">
+        <p>Contact Us at (414)-555-5555</p>
+        <i class="fa fa-twitter-square"></i>
+        ..
+        <i class="fa fa-facebook-square"></i>
+        ..
+        <i class="fa fa-google-plus-square"></i>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src='cars.js'></script>
+</body>
+
+</html>

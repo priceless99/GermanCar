@@ -5,14 +5,12 @@
   width: 100%;
   height: 100%;
 }
-.blurred {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  height: 100%;
+.row {
+  color: white
 }
-
+.banner {
+  height: 70px;
+}
 
 .engine {
   display: block;
@@ -21,7 +19,6 @@
   width: 100%;
   height: 100%
 }
-
 
 .containerBox {
   position: relative;
@@ -37,15 +34,6 @@
   left: 5%;
   width: 100%;
   padding-bottom: 0;
-}
-.more {
-  position: absolute;
-  text-align: center;
-  top: 20%;
-  height: 100%;
-  width: 100%;
-  padding-left: 15%;
-  padding-right: 15%;
 }
 
 .text-box1 {
@@ -153,7 +141,7 @@
   padding-right: 15vw;
 }
 
-.stuff {
+.card {
 
   font-size: 1.4vw;
   font-weight: 400;
@@ -166,7 +154,7 @@
   padding: 1.5vh 1.5vw;
 }
 
-.stuff:hover {
+.card:hover {
   background-color: white;
   opacity: 0.5;
   color: black;
@@ -181,32 +169,11 @@
 
 }
 
-.imgr {
-  height: auto;
-  width: auto;
-  /* max-height: 72px; */
-  max-width: 100px;
+.img-responsive {
+  height: 75px;
+  width: 150px;
   float: left;
-  vertical-align: top;
-  padding-bottom: 5px
-  /* padding-right: 25px; */
-}
 
-.row {
-  background-color: black;
-  display: table
-}
-[class*="col-"] {
-  float: none;
-  display: table-cell;
-  vertical-align: top;
-}
-.imgr2 {
-  width: 100%;
-  /* height: 300px; */
-}
-.col-sm-12 {
-  background-color: black
 }
 
 .contain {
@@ -218,24 +185,30 @@
 
 .topnav {
   color: white;
-  background-color: black;
-  /* display: inline-block; */
+  background-color: #1b1b1b;  
+  display: flex;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  z-index: 99999;
+  height: 7vh
 }
 
 @media screen and (max-width: 600px) {
   .topnav a:not(:checked) {display: none;}
   .topnav a.icon {
-    /* float: right; */
     position: absolute;
     top: 30%;
     right: 10%;
     display: block;
-  
   }
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: relative;
+  }
+
   .topnav.responsive a.icon {
     position: absolute;
     right: 5;
@@ -249,9 +222,9 @@
   }
 }
 
-.topnav .icon {
-  display: none;
-}
+  .topnav .icon {
+    display: none;
+  }
 
 .fa {
   transform: scale(2, 2);
@@ -267,7 +240,7 @@
 }
 
 .w3-bar {
-  opacity: 0.5;
+  /* opacity: 0.5; */
   size: 10vh;
 }
 
@@ -453,12 +426,13 @@
   padding: 8vw 8vh;
   margin: 0;
 }
+.col-sm-6 {
+  background-color: black
+}
 
 .back1 {
   background-color: black;
-  padding: 5vh;
-  text-align: center;
-  color: white
+  padding: 8vw 8vh;
   /* margin: 0; */
 }
 
@@ -561,8 +535,9 @@
 }
 
 .pad {
-  padding-top: 0.5vh;
-  background-color: black
+  padding: 1px;
+  background-color: gray;
+  color: transparent
 }
 
 .zoom {
@@ -606,18 +581,18 @@
 .container {
   position: relative;
 
+
 }
-.pic {
+.container1 {
   position: relative;
   /* padding: 0 0; */
 
 }
 
-.footer {
-  background-color: #484848;
-  padding: 0 0;
-  /* height: 5vh; */
-  /* color: white; */
+.bg {
+  background-color: #1b1b1b;
+  color: white;
+  padding: 2vh
 }
 #vid {
    width: 1920px;
@@ -631,13 +606,12 @@
 }
 .quatro{
   width: 67%;
- 
 }
-.bg {
-  background-color: #1b1b1b;
-  color: white;
-  padding: 2vh
+
+.pic {
+  position: relative;
 }
-.cars {
-  font-size: 3vh;
+.btn1 {
+  border-color: white;
+  border: 5px
 }

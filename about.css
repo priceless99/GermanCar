@@ -164,13 +164,21 @@
 }
 
 .img-responsive {
+  height: 75px;
+  width: 150px;
+  padding-left: 0;
+  /* float: left; */
+
+}
+.imgr {
   height: auto;
   width: auto;
-  max-height: 72px;
+  /* max-height: 72px; */
   max-width: 100px;
   float: left;
   vertical-align: top;
-  padding-right: 25px;
+  padding-bottom: 5px
+  /* padding-right: 25px; */
 }
 
 .contain {
@@ -183,18 +191,21 @@
 .topnav {
   color: white;
   background-color: black;
-  display: inline-block;
+  display: flex;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  z-index: 99999;
+  height: 7vh
 }
 
 @media screen and (max-width: 600px) {
   .topnav a:not(:checked) {display: none;}
   .topnav a.icon {
-    /* float: right; */
     position: absolute;
     top: 30%;
     right: 10%;
     display: block;
-  
   }
 }
 
@@ -216,9 +227,9 @@
   }
 }
 
-.topnav .icon {
-  display: none;
-}
+  .topnav .icon {
+    display: none;
+  }
 
 .fa {
   transform: scale(2, 2);
@@ -420,6 +431,9 @@
   padding: 8vw 8vh;
   margin: 0;
 }
+.col-sm-6 {
+  background-color: black
+}
 
 .back1 {
   background-color: black;
@@ -494,24 +508,28 @@
   padding: 15px
 }
 
-
+.column1 {
+  float: left;
+  width: 50%;
+}
 .column {
   float: left;
   width: 50%;
 }
 
-.column img {
+.column{
     /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
     /* filter: gray;  IE5+  */
     -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
-    transition: all .8s ease-in-out;  
+    transition: all .7s ease-in-out;  
 }
 
-.column img:hover {
+.column:hover {
   -webkit-filter: grayscale(0);
-  -transform: scale(1.01);
 }
-
+.yes {
+  -webkit-filter: grayscale(0)
+}
 .closebtn {
   position: absolute;
   top: 10px;
@@ -523,7 +541,8 @@
 
 .pad {
   padding-top: 0.5vh;
-  background-color: black
+  background-color: black;
+  color: transparent
 }
 
 .zoom {
@@ -575,11 +594,10 @@
 
 }
 
-.footer {
-  background-color: #484848;
-  padding: 0 0;
-  /* height: 5vh; */
-  /* color: white; */
+.bg {
+  background-color: #1b1b1b;
+  color: white;
+  padding: 2vh
 }
 #vid {
    width: 1920px;
@@ -593,17 +611,8 @@
 }
 .quatro{
   width: 67%;
- 
 }
-.img {
-  /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
-    filter: gray; /* IE5+ */
-    -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
-    transition: all .8s ease-in-out;  
-  }
 
-  .img:hover {
-  filter: none;
-    -webkit-filter: grayscale(0);
-    -transform: scale(1.01);
-  }
+.pic {
+  position: relative;
+}
